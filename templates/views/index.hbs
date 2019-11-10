@@ -19,12 +19,18 @@
             <button>Search</button>
         </form>
 
+        <div class="current-location-container">
+            <button id="current-location">Use Current Location</button>
+        </div>
+
         <p id="message-1"></p>
         <p id="message-2"></p>
     </div>
 
     {{>footer}}
 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/app.js"></script>
 </body>
 

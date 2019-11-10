@@ -4,14 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "env-cmd": "^8.0.2",
     "express": "^4.16.4",
     "hbs": "^4.0.1",
-    "request": "^2.88.0"
+    "http": "0.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.0"
   }
 }
