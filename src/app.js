@@ -62,7 +62,7 @@ io.on("connection", socket => {
   });
 
   socket.on("join", () => {
-    socket.emit("message", "Welcome user!");
+    socket.emit("message", "Welcome user");
   });
 });
 
